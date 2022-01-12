@@ -1,0 +1,36 @@
+h1{
+    color: plum;
+    background-color: slategray;
+    width: 50%;
+    height: 100px;
+    /* Ha diverse unità di misura ma le più usate sono px e % */
+    min-width: 300px; 
+    /* Vuol dire che restringendo lo schermo arriverà fino a 300px e non si stringerà più. */
+    max-width: 500px; 
+    /* Vuol dire che allargando lo schermo arriverà finoa a 500px e non si allargherà più. */
+    overflow: hidden;
+    /* vuol dire che la parola nel contenitore sparirà nel caso in cui sia più grande del contenitore stesso */
+    overflow: scroll;
+    /* vuol dire che il contenitore diventerà una finestra che scrolla su e giù per visualizzare tutto il contenuto */
+    margin: 20px;
+    /* indica la distanza del contenitore dai bordi - spazio esterno */
+    padding: 20px;
+    /* indica la distanza del contenuto dal contenitore - spazio interno */
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin: 20px 10px 20px 10px; 
+    /* margin con 4 valori parte da top e va in senso orario */
+    margin: 20px 10px;
+    /* margin con 2 valori intende sopra e sotto con il primo e destra e sinistra con il secondo */
+}
+
+.header-subtitle{
+    color: purple;
+}
+
+#pippo{
+    color: slateblue;
+}
+
