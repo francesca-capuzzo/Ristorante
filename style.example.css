@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,700;1,200&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+/* questi due link arrivano da google fonts e vengono generati automaticamente - per avere l'intera pagina con lo stesso font basta darlo al body */
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+h1{
+    color: plum;
+    background-color: slategray;
+    width: 50%;
+    height: 100px;
+    /* Ha diverse unità di misura ma le più usate sono px e % */
+    min-width: 300px; 
+    /* Vuol dire che restringendo lo schermo arriverà fino a 300px e non si stringerà più. */
+    max-width: 500px; 
+    /* Vuol dire che allargando lo schermo arriverà finoa a 500px e non si allargherà più. */
+    overflow: hidden;
+    /* vuol dire che la parola nel contenitore sparirà nel caso in cui sia più grande del contenitore stesso */
+    /* overflow: scroll; */
+    /* vuol dire che il contenitore diventerà una finestra che scrolla su e giù per visualizzare tutto il contenuto (commentato perchè cambia il resto delle impostazioni)*/
+    margin: 20px;
+    /* indica la distanza del contenitore dai bordi - spazio esterno */
+    padding: 20px;
+    /* indica la distanza del contenuto dal contenitore - spazio interno */
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin: 20px 10px 20px 10px; 
+    /* margin con 4 valori parte da top e va in senso orario */
+    margin: 20px 10px;
+    /* margin con 2 valori intende sopra e sotto con il primo e destra e sinistra con il secondo */
+    
+
+    border-style: dotted;
+    /* bordo a puntini */
+    border-style: double;
+    /* bordo doppio */
+    border-style: dashed;
+    /* bordo a righette */
+    border-style: solid;
+    /* crea un bordo dello stesso colore del testo finchè non lo cambio (quindi PLUM come h1) */
+    border-color: deeppink;
+    border-width: 20px;
+    /* cambia lo spessore del bordo */
+    border-radius: 20px;
+    /* smussa gli angoli del bordo */
+    border: solid 2px deeppink;
+    /* si possono dare tutte le proprietà al bordo con un solo comando (l'ordine non conta) */
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right:0px;
+    border-top: 0px;
+    /* cambiano ogni lato del bordo per renderlo diverso dagli altri */
+    border-bottom-left-radius: 20px;
+    /* cambia anche un solo angolo del bordo per farlo diverso */
+    border-radius: 20px 30px 0px 100px;
+    /* si parte dal top left andando in senso orario */
+
+
+    background-image: url(polpo.jpg);
+    background-size: auto;
+    background-size: contain;
+    /* tende a ripetere l'immagine più volte per riempire il contenitore */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* posiziona l'immagine partendo dai bordi in alto */
+    background-position-x: center;
+    background-position-y: center;
+    /* usati entrambi aiutano a posizionare l'immagine al centro del contenitore ma si dovrà poi modificare l'height del contenitore o l'immagine direttamente
+    per avere l'effetto desiderato */
+}
+
+.header-subtitle{
+    color: purple;
+}
+
+#pippo{
+    color: slateblue;
+}
+
+
+.nav-link{
+    display: block;
+    /* siccome i link sono inline di solito, con questa opzione andranno a capo automaticamente e potranno essere modificati di dimensioni 
+    anche se all'inizio utilizzeranno tutto lo spazio a loro disponibile sullo schermo finchè non andremo a modificarne le dimensioni*/
+    background-color: yellow;
+    width: 300px;
+
+    display: inline;
+    background-color: yellow;
+    width: 300px;
+    /* cambiando la widht o height, non cambia nulla perchè gli elementi inline restano della dimensione del loro contenuto */
+
+    display: inline-block;
+    /* permette di modificare le dimensioni di elementi inline che di solito non si possono modificare */
+    background-color: yellow;
+    width: 300px;
+}
+
+
+.t1{
+    background-color: red;
+    margin: 0px;
+    position: relative;
+    height: 100px;
+    left: 20px;
+    top: 50px;
+}
+
+.t2{
+    background-color: rebeccapurple;
+    margin: 0px;
+    height: 100px;
+}
+
+.t3{
+    background-color: blue;
+    margin: 0px;
+    position: absolute;
+    height: 100px;
+    right: 0px;
+    top: 0px;
+}
+
+.t4{
+    background-color: yellow;
+    margin: 0px;
+    height: 100px;
+}
+
+.t5{
+    background-color: palevioletred;
+    margin: 0px;
+    height: 100px;
+}
+
+.t6{
+    background-color: green;
+    margin: 0px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 100px;
+    /* scrollando la pagina questo resterà fissato allo schermo e non alla pagina quindi ti seguirà ovunque */
+}
+
+.t7{
+    background-color: turquoise;
+    margin: 0px;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    left: 200px;
+}
+
+.t7-container{
+    background-color: royalblue;
+    height: 200px;
+    position: relative;
+    /* aggiungendo o togliendo position relative, il contenuto (t7) si comporta in modo differente e diventa relativo allo schermo o al contenitore stesso */
+}
